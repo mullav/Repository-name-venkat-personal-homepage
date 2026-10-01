@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional portfolio and research homepage of an Enterprise Integration and AI Transformation Architect.">
+<title>Venkat Mulla | Enterprise Integration & AI Transformation Architect</title>
+<style>
+:root{
+  --bg:#f7f8fb; --surface:#ffffff; --text:#172033; --muted:#5f6b7a;
+  --line:#e4e8ef; --accent:#3157d5; --accent2:#173b9b; --soft:#eef2ff;
+  --max:1120px; --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,248,251,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.2px}
+.logo span{color:var(--accent)}
+.links{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--accent)}
+.hero{padding:96px 0 80px;background:linear-gradient(135deg,#f8f9ff 0%,#eef2ff 55%,#f7f8fb 100%)}
+.eyebrow{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.03;letter-spacing:-2.8px;margin:16px 0 22px;max-width:900px}
+.hero p{font-size:20px;max-width:760px;color:var(--muted);margin:0 0 30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:14px}
+.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}
+.btn.primary:hover{background:var(--accent2)}
+section{padding:82px 0}
+.section-head{max-width:720px;margin-bottom:34px}
+h2{font-size:36px;letter-spacing:-1.3px;margin:8px 0 10px}
+.lead{color:var(--muted);font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 8px 30px rgba(20,32,60,.04)}
+.card h3{margin:0 0 9px;font-size:19px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{background:var(--soft);color:var(--accent2);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+.timeline{border-left:2px solid #d9dff0;padding-left:24px}
+.item{position:relative;margin-bottom:28px}
+.item:before{content:"";position:absolute;left:-32px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.item strong{display:block;font-size:16px}
+.item span{color:var(--muted);font-size:13px}
+.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:32px 0}
+.stat{background:white;border:1px solid var(--line);border-radius:14px;padding:20px}
+.stat b{display:block;font-size:27px}
+.stat small{color:var(--muted)}
+.project{display:flex;flex-direction:column;justify-content:space-between;min-height:220px}
+.project .label{font-size:12px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.publication{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:start}
+.year{font-weight:800;color:var(--accent);font-size:24px}
+.quote{border-left:4px solid var(--accent);padding:18px 22px;background:white;border-radius:0 14px 14px 0;color:#354052}
+footer{padding:45px 0;border-top:1px solid var(--line);color:var(--muted)}
+footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){
+ .links{display:none}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.statbar{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){
+ .container{width:min(calc(100% - 28px),var(--max))}
+ .hero{padding:70px 0 60px} section{padding:60px 0}
+ h1{letter-spacing:-1.8px}.publication{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#home">Venkat <span>Mulla</span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#research">Research</a>
+      <a href="#work">Selected Work</a><a href="#publications">Publications</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Enterprise Architecture • Integration • Transformation</div>
+    <h1>Enterprise Integration &amp; AI Transformation Architect</h1>
+    <p>
+      Technology leader and practitioner focused on enterprise integration, API management,
+      cloud modernization, SAP integration, platform governance, and the emerging role of
+      artificial intelligence in enterprise architecture.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#research">Explore Research</a>
+      <a class="btn" href="#work">View Selected Work</a>
+      <a class="btn" href="#contact">Connect</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">About</div>
+    <h2>Architecture grounded in real enterprise systems.</h2>
+    <p class="lead">
+      My work sits at the intersection of technology strategy and hands-on enterprise delivery.
+      I have worked across middleware, integration platforms, databases, cloud services, SAP,
+      API management, and technology operations, with a growing focus on AI-enabled transformation.
+    </p>
+  </div>
+  <div class="quote">
+    “The most useful architecture is architecture that connects strategy with the realities of
+    systems, people, dependencies, governance, and operational change.”
+  </div>
+  <div class="statbar">
+    <div class="stat"><b>20+</b><small>Years in enterprise technology</small></div>
+    <div class="stat"><b>400+</b><small>Interfaces / APIs in integration landscape</small></div>
+    <div class="stat"><b>10+</b><small>Enterprise systems connected</small></div>
+    <div class="stat"><b>Multi-platform</b><small>Azure • SAP • Microsoft • Integration</small></div>
+  </div>
+</div>
+</section>
+
+<section id="expertise">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">Areas of Expertise</div>
+    <h2>From integration platforms to transformation strategy.</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Enterprise Integration</h3><p>Integration architecture, middleware operations, interface lifecycle management, reliability, dependency analysis, and modernization.</p><div class="tags"><span class="tag">BizTalk</span><span class="tag">SSIS</span><span class="tag">Integration Architecture</span></div></div>
+    <div class="card"><h3>API Management</h3><p>API governance, security, authentication, versioning, policies, monitoring, developer enablement, and lifecycle management.</p><div class="tags"><span class="tag">Azure APIM</span><span class="tag">OAuth</span><span class="tag">API Governance</span></div></div>
+    <div class="card"><h3>Cloud Integration</h3><p>Modern integration patterns using Azure services, including serverless workflows, messaging, APIs, data movement, and operational monitoring.</p><div class="tags"><span class="tag">Azure</span><span class="tag">Logic Apps</span><span class="tag">Service Bus</span></div></div>
+    <div class="card"><h3>SAP Integration</h3><p>Enterprise integration involving SAP landscapes, business applications, middleware, data flows, and cross-platform troubleshooting.</p><div class="tags"><span class="tag">SAP CPI</span><span class="tag">S/4HANA</span><span class="tag">RFC</span></div></div>
+    <div class="card"><h3>Modernization</h3><p>Legacy platform assessment and migration decisions based on business criticality, technical viability, dependencies, cost, and risk.</p><div class="tags"><span class="tag">Cloud Migration</span><span class="tag">Re-architecture</span><span class="tag">Transformation</span></div></div>
+    <div class="card"><h3>AI &amp; Enterprise Architecture</h3><p>Exploring how AI can become an architectural capability within enterprise integration, operations, governance, and technology transformation.</p><div class="tags"><span class="tag">Enterprise AI</span><span class="tag">GenAI</span><span class="tag">AI Integration</span></div></div>
+  </div>
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">Research</div>
+    <h2>Research interests</h2>
+    <p class="lead">
+      My research interests focus on practical enterprise technology problems where architecture,
+      integration, governance, modernization, and AI intersect.
+    </p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>API Management &amp; Governance</h3><p>How organizations establish sustainable API ownership, lifecycle controls, security, reuse, and operational governance at enterprise scale.</p></div>
+    <div class="card"><h3>Enterprise Integration</h3><p>Architectural patterns and operating models for connecting heterogeneous enterprise applications and data platforms.</p></div>
+    <div class="card"><h3>Cloud Modernization</h3><p>Decision frameworks for moving legacy integration capabilities toward cloud-native platforms while managing risk and business continuity.</p></div>
+    <div class="card"><h3>AI-enabled Architecture</h3><p>Research into practical ways AI can augment integration design, operational support, governance, and enterprise transformation.</p></div>
+    <div class="card"><h3>SAP &amp; Hybrid Integration</h3><p>Architectural approaches for integrating SAP environments with cloud platforms, APIs, databases, and enterprise applications.</p></div>
+    <div class="card"><h3>Technology Transformation</h3><p>How architecture, governance, operating models, and organizational decision-making influence successful technology transformation.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">Selected Work</div>
+    <h2>Enterprise problems, architectural approaches, measurable scale.</h2>
+  </div>
+  <div class="grid">
+    <div class="card project">
+      <div><div class="label">Integration Platform</div><h3>Enterprise Integration Modernization</h3><p>Supported modernization of a large integration landscape spanning REST APIs, databases, EDI, BizTalk, Azure Functions, Logic Apps, SAP CPI, and enterprise applications.</p></div>
+      <div class="tags"><span class="tag">400+ interfaces</span><span class="tag">16 migration waves</span></div>
+    </div>
+    <div class="card project">
+      <div><div class="label">API Architecture</div><h3>API Management &amp; Integration Governance</h3><p>Developed an enterprise governance perspective covering request, design, development, testing, approval, deployment, monitoring, security, versioning, and lifecycle management.</p></div>
+      <div class="tags"><span class="tag">Azure APIM</span><span class="tag">Governance</span></div>
+    </div>
+    <div class="card project">
+      <div><div class="label">SAP / Cloud</div><h3>Enterprise Pricing Integration</h3><p>Architecture and delivery across MDM, S/4HANA, CX, Vistex, GCP, C4C, BI, SAP CPI, Azure Functions, Azure SQL, SSIS, APIs, and integration services.</p></div>
+      <div class="tags"><span class="tag">SAP CPI</span><span class="tag">Azure</span><span class="tag">APIs</span></div>
+    </div>
+    <div class="card project">
+      <div><div class="label">Modernization</div><h3>BizTalk to Cloud Integration</h3><p>Migration planning and execution using differentiated treatment for interfaces requiring lift-and-shift, re-architecture, replacement, or retention/reassessment.</p></div>
+      <div class="tags"><span class="tag">Lift &amp; shift</span><span class="tag">Re-architecture</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="publications">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">Publications</div>
+    <h2>Research and practitioner writing</h2>
+    <p class="lead">A growing collection of work focused on enterprise integration, API management, cloud modernization, and AI-enabled transformation.</p>
+  </div>
+  <div class="card publication">
+    <div class="year">2026</div>
+    <div>
+      <h3>API Management and Integration Governance in Large Enterprises</h3>
+      <p>Practitioner research examining governance challenges across large enterprise integration landscapes and the architectural capabilities needed beyond the API gateway.</p>
+      <div class="tags"><span class="tag">API Management</span><span class="tag">Integration Governance</span><span class="tag">Enterprise Architecture</span></div>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <h3>Research portfolio</h3>
+    <p>Additional papers, research profiles, and future publications can be linked here as they become available.</p>
+  </div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container two">
+  <div>
+    <div class="eyebrow">Professional Perspective</div>
+    <h2>Technology leadership with an architect’s mindset.</h2>
+    <p class="lead">
+      My professional path has combined engineering, architecture, production support, modernization,
+      governance, and leadership. This combination informs how I approach transformation: not as a
+      technology replacement exercise, but as a coordinated change across platforms, dependencies,
+      operating processes, and people.
+    </p>
+    <div class="tags">
+      <span class="tag">Architecture</span><span class="tag">Strategy</span><span class="tag">Transformation</span>
+      <span class="tag">Governance</span><span class="tag">Operations</span><span class="tag">Leadership</span>
+    </div>
+  </div>
+  <div class="timeline">
+    <div class="item"><strong>Enterprise Integration &amp; Architecture</strong><span>Middleware • APIs • SAP • Cloud</span></div>
+    <div class="item"><strong>Platform Modernization</strong><span>Legacy modernization • Azure transformation</span></div>
+    <div class="item"><strong>Technology Leadership</strong><span>Delivery • Operations • Governance • Teams</span></div>
+    <div class="item"><strong>Research &amp; AI Transformation</strong><span>Enterprise AI • Architecture research</span></div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">Connect</div>
+    <h2>Professional collaboration and research</h2>
+    <p class="lead">For research collaboration, professional discussions, architecture topics, or technology transformation conversations.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>LinkedIn</h3><p>Add your LinkedIn profile URL here.</p></div>
+    <div class="card"><h3>ResearchGate</h3><p>Add your ResearchGate profile URL here.</p></div>
+    <div class="card"><h3>ORCID / Google Scholar</h3><p>Add your researcher identifiers here as your publication portfolio grows.</p></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container foot">
+  <div>© 2026 Venkat Mulla. Professional portfolio.</div>
+  <div>Enterprise Integration • Architecture • AI Transformation</div>
+</div>
+</footer>
+</body>
+</html>
